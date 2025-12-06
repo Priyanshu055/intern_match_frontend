@@ -99,7 +99,7 @@ const Dashboard = () => {
 
   const fetchRecommendedInternships = useCallback(async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/internships/recommended');
+      const res = await axios.get('https://intern-match-backend-1.onrender.com/api/internships/recommended');
       setInternships(res.data);
     } catch (error) {
       console.error('Error fetching internships:', error);
